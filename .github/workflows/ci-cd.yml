@@ -105,7 +105,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/bobapp-backend:${{ github.run_number }}
             ${{ secrets.DOCKERHUB_USERNAME }}/bobapp-backend:latest
-
       - name: Build et push image Frontend
         uses: docker/build-push-action@v5
         with:
